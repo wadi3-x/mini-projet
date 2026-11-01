@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>document</title>
+  
+ 
+  <link rel="stylesheet" href="test.html">
+  <style>
+    *{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+header{
+    background-color: black;
+  
+    
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    
+  
+    /* flex-direction: row; */
+}
+.logo{
+   
+}
+nav {
+
+}
+.contact-grid{
+    display: grid;
+    grid-template-columns: 1fr ;
+    /* gap: 12px; */
+    margin-top: 30px;
+     max-width: 50% ;
+     background-color: black;
+     border-color:  1px solid black;
+
+}
+textarea{
+    margin-top: 20px;
+    resize: vertical;
+
+    
+
+
+}
+
+  </style>
+</head>
+<body>
+    <header>
+        <a href="" class="logo"><img src="" alt=""></a>
+
+       <nav>
+        <ul>
+             <li><a href="index.html" >Acceuil</a></li>
+             <li><a href=".html" >Contact</a></li></li>
+            
+        </ul>
+
+      </nav>  
+    </header>
+    <section >
+        Bienvenue
+        <div>
+            <h1>fitnex</h1>
+            <p>ppppppppppppppppppppppppppppppppp</p>
+        </div>
+
+    </section>
+    <section class="contact-grid">
+        <div >
+        <label for="nom">Name complet</label>
+        <input type="text" id="nom" name="nom" placeholder="name" required>
+        <label for="email ">Email</label>
+        <input id="email" type="email" name="emil" placeholder="@example.com" required>
+        </div>
+        <div class="textarea">
+        <textarea id="message" name="message">message</textarea>
+       </div>
+
+       <button class="btn">submit</button>
+
+    </section>
+</body>
