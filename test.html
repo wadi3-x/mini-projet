@@ -23,7 +23,7 @@ body {
  
 a { color: #ECF0F1; }
  
-/* header, main, footer { padding: 1rem; } */
+header, main, footer { padding: 1rem; }
 header {
     display: flex;
     justify-content: space-between;
@@ -44,24 +44,56 @@ header {
     margin: 0;
     padding: 0;
 }
-.contact-grid{
-    display: grid;
-    grid-template-columns: 1fr ;
-    /* gap: 12px; */
-    margin-top: 30px;
-     max-width: 50% ;
-     background-color: black;
-     border-color:  1px solid black;
-
+.menu li { display: flex; };
+.menu a {
+    text-decoration: none;
+    padding: 0.25rem 0;
+    border-bottom: 2px solid transparent;
 }
+.menu a:hover, .menu a:focus { border-bottom-color: #E74C3C; }
+main { max-width: 800px; margin: 0 auto; }
+section { margin: 1rem 0; padding: 1rem; }
+h1, h2 { font-weight: 700; margin-top: 0; }
+
+form { display: flex; flex-direction: column; gap: 0.5rem; }
+label { font-weight: 700; }
+ 
+input, textarea {
+    padding: 0.5rem;
+    font: inherit;
+    border: 2px solid #ECF0F1;
+    border-radius: 4px;
+    background: #ECF0F1;
+    color: #2C3E50;
+}
+input:focus, textarea:focus, button:focus, a:focus {
+    outline: 3px solid #E74C3C;
+    outline-offset: 2px;
+}
+ 
+button {
+    align-self: flex-start;
+    margin-top: 0.5rem;
+    padding: 0.6rem 1.5rem;
+    font: inherit;
+    font-weight: 700;
+    background: #E74C3C;
+    color: #111;            
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover { background: #ECF0F1; }
 textarea{
-    margin-top: 20px;
     resize: vertical;
-
-    
-
-
 }
+
+
+
+
+
+
+
 
   </style>
 </head>
