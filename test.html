@@ -57,38 +57,40 @@ textarea{
   </style>
 </head>
 <body>
+   <body>
     <header>
-        <a href="" class="logo"><img src="" alt=""></a>
-
-       <nav>
-        <ul>
-             <li><a href="index.html" >Acceuil</a></li>
-             <li><a href=".html" >Contact</a></li></li>
-            
-        </ul>
-
-      </nav>  
+        <a class="logo" href="index.html">Casablanca Créations</a>
+        <nav aria-label="Navigation principale">
+            <ul class="menu">
+                <li><a href="#bienvenue">Accueil</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <section >
-        Bienvenue
-        <div>
-            <h1>fitnex</h1>
-            <p>ppppppppppppppppppppppppppppppppp</p>
-        </div>
-
-    </section>
-    <section class="contact-grid">
-        <div >
-        <label for="nom">Name complet</label>
-        <input type="text" id="nom" name="nom" placeholder="name" required>
-        <label for="email ">Email</label>
-        <input id="email" type="email" name="emil" placeholder="@example.com" required>
-        </div>
-        <div class="textarea">
-        <textarea id="message" name="message">message</textarea>
-       </div>
-
-       <button class="btn">submit</button>
-
-    </section>
+ 
+    <main>
+        <section id="bienvenue">
+            <h1>Bienvenue chez Casablanca Créations</h1>
+            <p>Nous créons des sites vitrines simples et élégants pour les artisans locaux :
+               potiers, tisserands, menuisiers, maroquiniers… Faites rayonner votre savoir-faire en ligne.</p>
+        </section>
+ 
+        <section id="contact">
+            <h2>Contact</h2>
+            <form action="#" method="post" aria-label="Formulaire de contact">
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" name="nom" required>
+ 
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+ 
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+ 
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+    </main>
 </body>
+</html>
